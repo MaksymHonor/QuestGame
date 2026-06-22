@@ -3,65 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quest – Quest Game</title>
+    <title>Quests – Quest Game</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="questStyle.css" />
   </head>
+
   <body>
     <header>
-      <h1><a href="index.html" class="logo-link">Quest Game</a></h1>
-      ö
+      <a href="index.html" class="logo">Quest Game</a>
     </header>
 
-    <main>
-      <!-- QUEST HERO -->
-      <section class="quest-hero">
-        <h2>Your Quest Adventure</h2>
-        <p>Follow the route, solve puzzles and unlock each next location.</p>
+    <main class="quests-page">
+      <section class="quests-hero">
+        <h1>Choose Your Adventure</h1>
+        <p>Pick a quest and start your journey</p>
       </section>
 
-      <!-- QUEST INFO -->
-      <section class="quest-info">
-        <h3>How this quest works</h3>
-        <p>
-          You will receive clues, coordinates and tasks. Each solved step opens
-          the next one. Drive safely, think fast and enjoy the game.
-        </p>
-      </section>
+      <section class="quests-list">
+        <!-- Quest Card 1 -->
+        <div class="quest-card">
+          <img src="img/quest1.jpg" alt="Quest 1" />
+          <div class="quest-info">
+            <h3>Mystery of the Lost Route</h3>
+            <p>Find hidden checkpoints and solve puzzles across the city.</p>
+            <a href="quest.html" class="btn">Start Quest</a>
+          </div>
+        </div>
 
-      <!-- RULES -->
-      <section class="quest-rules">
-        <h3>Rules & recommendations</h3>
-        <ul>
-          <li>Respect traffic rules and speed limits.</li>
-          <li>Do not block roads or private entrances.</li>
-          <li>Use your phone only when parked safely.</li>
-          <li>Work as a team and have fun.</li>
-        </ul>
-      </section>
+        <!-- Quest Card 2 -->
+        <div class="quest-card">
+          <img src="img/quest2.jpg" alt="Quest 2" />
+          <div class="quest-info">
+            <h3>Night Riders Challenge</h3>
+            <p>Race through night streets and uncover secret clues.</p>
+            <a href="quest.html" class="btn">Start Quest</a>
+          </div>
+        </div>
 
-      <!-- STEPS / STAGES -->
-      <section class="quest-steps">
-        <h3>Quest stages</h3>
-        <ol>
-          <li>Start point – get your first clue.</li>
-          <li>Drive to location #1 and solve the puzzle.</li>
-          <li>Unlock location #2 and continue.</li>
-          <li>Reach the final point and complete the quest.</li>
-        </ol>
-      </section>
-
-      <!-- CTA -->
-      <section class="quest-cta">
-        <h3>Ready to start the quest?</h3>
-        <a href="start.html" class="btn">Go to first task</a>
+        <!-- Quest Card 3 -->
+        <div class="quest-card">
+          <img src="img/quest3.jpg" alt="Quest 3" />
+          <div class="quest-info">
+            <h3>Highway Enigma</h3>
+            <p>Follow the trail of encrypted messages and unlock the truth.</p>
+            <a href="quest.html" class="btn">Start Quest</a>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>© 2026 Quest Game</p>
-    </footer>
+    <footer class="site-footer">
+      <div class="footer-overlay">
+        <div class="footer-content">
+          <h2>QuestDrive</h2>
+          <p>Adventure. Speed. Mystery.</p>
 
-    <script src="js/main.js"></script>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.3l-.4 3h-1.9v7A10 10 0 0 0 22 12"
+                />
+              </svg>
+            </a>
+
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm0 7.3A2.8 2.8 0 1 1 14.8 12 2.8 2.8 0 0 1 12 14.8zm4.7-8.8a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1z"
+                />
+              </svg>
+            </a>
+
+            <a href="#" class="social-icon" aria-label="TikTok">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12.5 2h3.1c.2 1.6 1.3 3 2.8 3.6v3.1c-1.2-.1-2.4-.5-3.4-1.1v7.4a6 6 0 1 1-6-6h.5v3.2a2.8 2.8 0 1 0 2.8 2.8V2z"
+                />
+              </svg>
+            </a>
+
+            <a href="#" class="social-icon" aria-label="YouTube">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M21.8 8.2s-.2-1.5-.8-2.2c-.8-.8-1.7-.8-2.1-.9C15.9 5 12 5 12 5h-.1s-3.9 0-6.9.1c-.4 0-1.3.1-2.1.9-.6.7-.8 2.2-.8 2.2S2 9.9 2 11.6v1.7c0 1.7.2 3.4.2 3.4s.2 1.5.8 2.2c.8.8 1.9.8 2.4.9 1.7.2 7 .2 7 .2s3.9 0 6.9-.1c.4 0 1.3-.1 2.1-.9.6-.7.8-2.2.8-2.2s.2-1.7.2-3.4v-1.7c0-1.7-.2-3.4-.2-3.4zM10 14.7V8.9l5.2 2.9z"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <p class="copyright">© 2026 QuestDrive. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
