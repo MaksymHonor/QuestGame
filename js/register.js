@@ -1,4 +1,6 @@
-document.getElementById("registerForm").addEventListener("submit", function (e) {
+document
+  .getElementById("registerForm")
+  .addEventListener("submit", function (e) {
     e.preventDefault();
 
     const name = document.getElementById("name").value.trim();
@@ -8,13 +10,14 @@ document.getElementById("registerForm").addEventListener("submit", function (e) 
     const car = document.getElementById("car").value.trim();
 
     if (!name || !team || !email || !phone || !car) {
-    alert("Please fill in all fields");
-    return;
-  }
+      alert("Please fill in all fields");
+      return;
+    }
 
-  const userData = { name, team, email, phone, car };
-  localStorage.setItem("questUser", JSON.stringify(userData));
+    const userData = { name, team, email, phone, car };
+    localStorage.setItem("questUser", JSON.stringify(userData));
 
-  // 🔥 Перехід на оплату
-  window.location.href = "https://your-stripe-payment-link";
-});
+    // 🔥 Перехід на оплату
+    window.location.href =
+      "https://buy.stripe.com/test_cNieVfcs88GK1Bv8JDeUU00";
+  });
